@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  background-color: #31424a;
+}
+.container {
+  height: 678px;
+  display: flex;
+}
+.my-name {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.name {
+  width: 80%;
+  font-family: "Courier New", Courier, monospace;
+}
+.garis {
+  width: 120px;
+  height: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #c5aa95;
+}
+.name h2 {
+  font-size: 30px;
+}
+.name h1 {
+  font-size: 50px;
+}
+.name span {
+  color: #c5aa95;
+}
+.click {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.click a {
+  background-color: #c5aa95;
+  text-decoration: none;
+  color: #31424a;
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 6px 30px;
+  border-radius: 20px;
+  margin-top: 20px;
+  transition: 0.5s;
+}
+.click a:hover {
+  box-shadow: 3px 5px 5px #293439;
+  background-color: #28373d;
+  transform: scale(1.1);
+  color: #c5aa95;
+}
+.my-img {
+  flex: 0.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.my-img img {
+  border-radius: 50%;
+  width: 300px;
+}
+
+/* content */
+.container-content {
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+}
+.container-content h1 {
+  font-size: 50px;
+  margin: 100px 0;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  margin-top: -60px;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+.box {
+  display: flex;
+  transform-style: preserve-3d;
+  transform: perspective(1000);
+  cursor: pointer;
+  width: 300px;
+  height: 300px;
+  margin: 5px 5px;
+  border-radius: 22px;
+  color: #28373d;
+  font-weight: bolder;
+  box-sizing: border-box;
+  background: linear-gradient(145deg, #cacaca, #cacaca);
+  /* box-shadow: 5px 5px 17px #c5aa95, -5px -5px 5px #fee5d3; */
+}
+.card {
+  transform: translateZ(30px);
+  margin: 10px;
+}
+.img-card {
+  display: flex;
+  justify-content: center;
+}
+.img-card img {
+  box-shadow: 5px 5px 10px #28353a;
+  border-radius: 10px;
+}
+.call {
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  background-color: #28373d;
+  padding: 5px;
+}
+.contact {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+.contact a {
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+  font-size: 19px;
+}
+
+/* resposvie design */
+@media only screen and (max-width: 865px) {
+  .container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .my-img {
+    padding: 20px 0;
+    margin-bottom: -20px;
+  }
+  html,
+  body {
+    background-color: #c5aa95;
+  }
+  .box {
+    color: #cacaca;
+    background: linear-gradient(145deg, #31424a, #31424a);
+  }
+  .click a {
+    background-color: #a3836a;
+  }
+  .name span {
+    color: #31424a;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .contact {
+    display: block;
+    text-align: center;
+  }
+  .contact h3 {
+    margin-bottom: 10px;
+  }
+}
